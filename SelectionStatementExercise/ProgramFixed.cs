@@ -1,4 +1,5 @@
 ﻿using System;
+using Internal;
 
 namespace SelectionStatementExercise
 {
@@ -19,28 +20,36 @@ namespace SelectionStatementExercise
             var random = new Random();
             var number = random.Next(1, upperLimit);
 
-            Console.WriteLine("Input your guess: ");
-
-            var guess = int.Parse(Console.ReadLine());
-
-            if (guess > number)
+            int guess;
+            do
             {
-                Console.WriteLine("Your guess is too high! Sorry");
-
-            }
-
-            else if (guess < number)
-
-            {
-                Console.WriteLine("Your guess is too low! Sorry ");
-
-            }
-            else
-            {
-                Console.WriteLine("You are Correct!");
 
 
-            }
+
+                Console.WriteLine("Input your guess: ");
+
+                guess = int.Parse(Console.ReadLine());
+
+                if (guess > number)
+                {
+                    Console.WriteLine("Your guess is too high! Sorry");
+
+                }
+
+                else if (guess < number)
+
+                {
+                    Console.WriteLine("Your guess is too low! Sorry ");
+
+                }
+                else
+                {
+                    Console.WriteLine(" You are, Correct");
+
+                }
+
+            } while (guess != number);
+
         }
     }
 }
