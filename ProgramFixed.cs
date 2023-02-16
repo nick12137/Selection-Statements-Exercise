@@ -1,4 +1,7 @@
-﻿//using System;
+﻿// Exercise 1
+
+//using System;
+
 
 //namespace SelectionStatementExercise
 //{
@@ -54,7 +57,7 @@
 //        }
 //    }
 //}
-
+// Exercise 2
 
 using System;
 
